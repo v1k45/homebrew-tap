@@ -1,6 +1,6 @@
 cask "bigtty" do
-  version "0.3.4"
-  sha256 "ddc7e989d4f84e9123d92b2e9ae9796c371079672528233d43db187c2046d55e"
+  version "0.3.5"
+  sha256 "2fc637e29d1030111daf2aedf0c0b6a38dc1e90921054b5c1691bf2fd69ec749"
 
   url "https://github.com/v1k45/bigtty/releases/download/v#{version}/bigtty-#{version}.zip"
   name "bigtty"
