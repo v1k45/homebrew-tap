@@ -1,6 +1,6 @@
 cask "bigtty" do
-  version "0.3.3"
-  sha256 "ace08c7079848cbfc3fa3a687923166a9cf5639541c26f95bd3b10b76adc3dd7"
+  version "0.3.4"
+  sha256 "ddc7e989d4f84e9123d92b2e9ae9796c371079672528233d43db187c2046d55e"
 
   url "https://github.com/v1k45/bigtty/releases/download/v#{version}/bigtty-#{version}.zip"
   name "bigtty"
@@ -31,4 +31,10 @@ cask "bigtty" do
     "~/Library/Preferences/dev.bigtty.bigtty.plist",
     "~/Library/WebKit/dev.bigtty.bigtty",
   ]
+
+  caveats <<~EOS
+    bigtty is a window onto herdr, which runs your terminals and agents.
+    If herdr isn't installed yet:
+      curl -fsSL https://herdr.dev/install.sh | sh
+  EOS
 end
